@@ -1,0 +1,102 @@
+/*Importa a fonte "ROBOTO" do google Fonst em diversos estilos e pasos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Define variáveis globáis para cores e bordas, facilitando mantenção e ajustes futuros*/
+
+:root {
+    --main-color: #da190f;
+    --bg: #13131a;
+    --br-card: #0c0c14;
+    --border: 0.1rem solid grey;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /**/
+    font-family: 'Roboto', 'sana-serif';
+    text-decoration: none;
+    text-transform: capitalize;
+    /**/
+    transition: 0.2s;
+    /**/
+    outline: none;
+    /**/
+    border: none;
+    /**/
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    /*Cofiguração do Font-Size para 62.5%, facilitabdo o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;
+    /**/
+}
+
+body {
+    background: var(--bg);
+    /*fundo de bodu color negro, esto color viene de arriba que esta dentro de root*/
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%; /*explicação do uso da porcentagem*/
+    border-bottom: var(--border);
+    /*esto biene de encima declarado border de root*/
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/*estilizando imagen que esta dentro de header que esta ancorado*/
+.logo img {
+    height: 6.5rem;/*define altura de logo*/
+    border-radius: 100%;
+}
+
+.ul-header {
+    display: flex;
+    gap: 15px;
+}
+
+.ul-header a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.ul-header li a:hover {
+    color: var(--main-color);/*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);/*adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*Adiciona espaçamento inferior no hover*/
+}
+
+.ul-header li {
+    list-style: none; /*esto é para tirar os puntos de as listas*/
+
+}
+
+.icons { /*NÃO  ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
+    display: flex;
+    align-items: center;
+    gap: 15px; /*es para separar los inconos*/
+}
+
+.icons i {
+    color: white;/*cor branca para ícons*/
+    cursor: pointer;/*Altera o cursor ao passar sobre o ícone*/
+    font-size: 2.5rem;/* tamanho dos ícones*/
+}
+
+.icons i:hover {
+    color: var(--main-color);/*muda a cor do ícone ao passar o mause*/
+}
+    
+
