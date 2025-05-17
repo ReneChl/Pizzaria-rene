@@ -98,5 +98,51 @@ header {
 .icons i:hover {
     color: var(--main-color);/*muda a cor do ícone ao passar o mause*/
 }
+
+#home {
+    display: flex;/**/
+    align-items: center;
+    position: relative;/*permite posicionamento relativo*/
+    min-height: 85vh;/*altura minima da sessão*/
+    background: url(imagem/images/home.jpg) no-repeat;/*add img sem repetição*/
+    background-size: cover;/*preenchimento da imagem*/
+    background-position: center;/*posicionamento da imagem*/
+    border-bottom: var(--border);/*adiciona borda inferior*/
+}
+
+.content {
+    max-width: 60rem;/**/
+    position: relative;
+    z-index: 2;
+}
+
+.content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+
     
 
+/* https://www.w3schools.com/cssref/sel_before.php */
+
+
+#home::before {
+    content: "";/*adiciona psudo-elemento vazio*/
+    position: absolute;/*Permite posicionamento absoluto*/
+    top:0;/*alinha o pseudo-elemento ao topo*/
+    left: 0;/*alinha a esquerda*/
+    width: 100%;/*ocupa toda a largura*/
+    left: 100%;/*ocupa toda altura*/
+    background-color: rgba(0,0,0, 0.5);/*adiciona sobreposição escura*/
+    z-index: 1;
+}
