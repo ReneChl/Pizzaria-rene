@@ -39,18 +39,19 @@ html {
 body {
     background: var(--bg);
     /*fundo de bodu color negro, esto color viene de arriba que esta dentro de root*/
-    
+
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%; /*explicação do uso da porcentagem*/
+    padding: 1.5rem 7%;
+    /*explicação do uso da porcentagem*/
     border-bottom: var(--border);
     /*esto biene de encima declarado border de root*/
     position: sticky;
-
+    background: var(--bg);
     top: 0;
     left: 0;
     z-index: 999;
@@ -58,7 +59,8 @@ header {
 
 /*estilizando imagen que esta dentro de header que esta ancorado*/
 .logo img {
-    height: 6.5rem;/*define altura de logo*/
+    height: 6.5rem;
+    /*define altura de logo*/
     border-radius: 100%;
 }
 
@@ -73,76 +75,206 @@ header {
 }
 
 .ul-header li a:hover {
-    color: var(--main-color);/*muda a cor do hover*/
-    border-bottom: 0.1rem solid var(--main-color);/*adiciona uma linha inferior no hover*/
-    padding-bottom: 0.5rem;/*Adiciona espaçamento inferior no hover*/
+    color: var(--main-color);
+    /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);
+    /*adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*Adiciona espaçamento inferior no hover*/
 }
 
 .ul-header li {
-    list-style: none; /*esto é para tirar os puntos de as listas*/
+    list-style: none;
+    /*esto é para tirar os puntos de as listas*/
 
 }
 
-.icons { /*NÃO  ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
+.icons {
+    /*NÃO  ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
     display: flex;
     align-items: center;
-    gap: 15px; /*es para separar los inconos*/
+    gap: 15px;
+    /*es para separar los inconos*/
 }
 
 .icons i {
-    color: white;/*cor branca para ícons*/
-    cursor: pointer;/*Altera o cursor ao passar sobre o ícone*/
-    font-size: 2.5rem;/* tamanho dos ícones*/
+    color: white;
+    /*cor branca para ícons*/
+    cursor: pointer;
+    /*Altera o cursor ao passar sobre o ícone*/
+    font-size: 2.5rem;
+    /* tamanho dos ícones*/
 }
 
 .icons i:hover {
-    color: var(--main-color);/*muda a cor do ícone ao passar o mause*/
+    color: var(--main-color);
+    /*muda a cor do ícone ao passar o mause*/
 }
 
 #home {
-    display: flex;/**/
+    display: flex;
+    /**/
     align-items: center;
-    position: relative;/*permite posicionamento relativo*/
-    min-height: 85vh;/*altura minima da sessão*/
-    background: url(imagem/images/home.jpg) no-repeat;/*add img sem repetição*/
-    background-size: cover;/*preenchimento da imagem*/
-    background-position: center;/*posicionamento da imagem*/
-    border-bottom: var(--border);/*adiciona borda inferior*/
+    position: relative;
+    /*permite posicionamento relativo*/
+    min-height: 85vh;
+    /*altura minima da sessão*/
+    background: url(imagem/images/home.jpg) no-repeat;
+    /*add img sem repetição*/
+    background-size: cover;
+    /*preenchimento da imagem*/
+    background-position: center;
+    /*posicionamento da imagem*/
+    border-bottom: var(--border);
+    /*adiciona borda inferior*/
 }
 
 .content {
-    max-width: 60rem;/**/
+    max-width: 60rem;
+    /**/
     position: relative;
     z-index: 2;
 }
 
 .content h3 {
-    font-size: 6rem;/*tamanho do título*/
-    text-transform: uppercase;/*deixando o texto em caisa alta*/
-    color: #fff;/*cor da letra bramca*/
+    font-size: 6rem;
+    /*tamanho do título*/
+    text-transform: uppercase;
+    /*deixando o texto em caisa alta*/
+    color: #fff;
+    /*cor da letra bramca*/
 }
 
 .content p {
-    font-size: 2rem;/*tamanho da fonte para parágrafos*/
-    font-weight: lighter;/*peso  da fuente ,ais leve*/
-    line-height: 1.8rem;/*espaçamento entre linhas*/
-    padding: 1rem 0;/*espaçamento interno*/
-    color: #fff;/*cor da letra*/
+    font-size: 2rem;
+    /*tamanho da fonte para parágrafos*/
+    font-weight: lighter;
+    /*peso  da fuente ,ais leve*/
+    line-height: 1.8rem;
+    /*espaçamento entre linhas*/
+    padding: 1rem 0;
+    /*espaçamento interno*/
+    color: #fff;
+    /*cor da letra*/
 }
 
 
-    
+
 
 /* https://www.w3schools.com/cssref/sel_before.php */
 
 
 #home::before {
-    content: "";/*adiciona psudo-elemento vazio*/
-    position: absolute;/*Permite posicionamento absoluto*/
-    top:0;/*alinha o pseudo-elemento ao topo*/
-    left: 0;/*alinha a esquerda*/
-    width: 100%;/*ocupa toda a largura*/
-    left: 100%;/*ocupa toda altura*/
-    background-color: rgba(0,0,0, 0.5);/*adiciona sobreposição escura*/
-    z-index: 1;/*posiciona abaixo do conteúdo*/
+    content: "";
+    /*adiciona psudo-elemento vazio*/
+    position: absolute;
+    /*Permite posicionamento absoluto*/
+    top: 0;
+    /*alinha o pseudo-elemento ao topo*/
+    left: 0;
+    /*alinha a esquerda*/
+    width: 100%;
+    /*ocupa toda a largura*/
+    left: 100%;
+    /*ocupa toda altura*/
+    background-color: rgba(0, 0, 0, 0.5);
+    /*adiciona sobreposição escura*/
+    z-index: 1;
+    /*posiciona abaixo do conteúdo*/
+}
+
+section {
+    padding: 2rem 7%;
+    /*Garante espaçamento interno nas sessões (responsividade)*/
+
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    /*texto em caixa alta*/
+    padding-bottom: 3rem;
+    /*espaçamento interno em relação ao título*/
+    font-size: 4rem;
+    /*40px*/
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+    /*texto caiza alta*/
+}
+
+/*estelizando botones*/
+.btn {
+    margin-top: 2rem;
+    padding: 0.9rem 3rem;
+    /*preechimento interno superior e inferior*/
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    display: inline-block;
+    /*deixando a formatação do  botão em formato de (bloco)
+
+    https/www.w3schools.com/css/tryit.asp?
+    filename=trycss_inline-block*/
+
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+    /*espaçamento entre as letras ao passsar mause*/
+
+}
+
+.row {
+    display: flex;
+    /*Define layout flexibel para os itens quebra os elementos*/
+    align-items: center;
+    /*alinha os itens ao centro verticalmente*/
+    background: var(--br-card);
+    /*Aplica uma color de fundo aos elementos*/
+    flex-wrap: wrap;
+    /*permite que os itens quebrem para a próxima linha*/
+    border: var(--border);
+    /*aplica uma borda ao da linha*/
+}
+
+.row .image {
+    flex: 1 1 45rem;
+    /*Define o tamanho flexível do elemento: base 45rem, podendo crear au encolher, au seja, faz com que possa ser adaptável para telas grandes ou pequenas*/
+
+}
+
+.row .image img {
+    width: 100%;
+    /*Faz com que a imagem ocupe toda s largura don container (.image)*/
+}
+
+.row .content {
+    flex: 1 1 45rem;
+    /*Define o tamanho flexível do conteúdo: base 45rem poderá crescer ou diminuir*/
+    padding: 2rem;
+    /*Adicione espaçamento interno ao redor do conteúdo*/
+}
+
+.row .content h3 {
+    font-size: 3rem;
+    /*define o tamanho da fonte para o subtítulo*/
+    color: #fff;
+    /*cor da letra*/
+
+}
+
+.row .content p {
+    font-size: 1.6rem;
+    /*Define o tamanho da fonte para o parágrafo*/
+    color: #ccc;
+    /*Define uma cor cinza para o texto*/
+    padding: 1rem 0;
+    /*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
+    line-height: 1.8rem;
+    /*define o espaçamento entre as linhas de um texto*/
 }
