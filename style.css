@@ -327,3 +327,71 @@ section {
 .container .box:hover>*{
     color: black;/*Altera a cor dos elementos filhos para preto ao passar mause*/
 }
+
+/*estilizando PROMOÇÕES*/
+/*estelizando a DIV pai*/
+
+.products .box-container {
+    display: grid;/*organiza os elementos em uma grade*/
+    grid-template-columns: repeat(auto-fit), minmax(30rem, 1fr);/*cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
+    gap: 1.5rem;/*define o espaçamento entre os itens da grade*/
+}
+
+/*estilizando os box(as caixas)*/
+.box-container .box {
+    text-align: center;/*centraliza os textos*/
+    border: var(--border);/*aplica uma borda ao redor da caixa*/
+    padding: 2rem;/*adiciona espaçamento interno nas caixas*/
+}
+
+/*estilizando os incons*/
+.incons a i {
+    height: 3rem;/*define a altura dos incones*/
+    width: 3rem;/*largura dos incones*/
+    line-height: 3rem;/*distancia dos conteúdos/altura da linha*/
+    font-size: 1.7rem;/*define o tamanho da fuente para os ícones*/
+    border: var(--border);/*aplica uma borda ao redor dos icones*/
+    color: #fff;/*define a cor branca para os icones*/
+    margin: 0.3rem;/*adiciona espaçamento entre os ícones*/
+}
+
+.icons a i:hover {
+    background: var(--main-color);/*altura o fundo dos incones para a cor principal*/
+}
+
+.box .image {
+    padding: 2rem 0;/*adiciona espaçamento vertical*/
+
+}
+
+.box .image .img {
+    height: 25rem;/*altura das imagens*/
+    
+}
+
+/*estilizando da caixa "content"*/
+
+.box .content {
+    color: #fff;/*define a cor branca para o conteúdo textual*/
+    font-size: 2.5rem;/*define o tamanho da fuente o conteúdo*/
+}
+
+.box-container .stars{
+    padding: 1.5rem;/*adiciona espaçamento ao redor das estrelas*/
+}
+
+.box-container .stars i {
+    font-size: 1.9rem;/*tamanhodas estrelas*/
+    color: var(--main-color);/*aplica a cor principal as estrelas*/
+}
+
+.box-container .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.box-container .price span {
+    font-weight: lighter;/*aplica fuente mais fina para o texto*/
+    font-size: 1.5rem;/*define o tamanho da fuente*/
+    text-transform: lowercase;/*trasforma o texto adicional para letras minúsculas*/
+}
