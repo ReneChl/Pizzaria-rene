@@ -333,7 +333,7 @@ section {
 
 .products .box-container {
     display: grid;/*organiza os elementos em uma grade*/
-    grid-template-columns: repeat(auto-fit), minmax(30rem, 1fr);/*cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));/*cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
     gap: 1.5rem;/*define o espaçamento entre os itens da grade*/
 }
 
@@ -356,7 +356,7 @@ section {
 }
 
 .icons a i:hover {
-    background: var(--main-color);/*altura o fundo dos incones para a cor principal*/
+    color: var(--main-color);/*altura o fundo dos incones para a cor principal*/
 }
 
 .box .image {
@@ -364,7 +364,7 @@ section {
 
 }
 
-.box .image .img {
+.box .image img {
     height: 25rem;/*altura das imagens*/
     
 }
@@ -394,4 +394,56 @@ section {
     font-weight: lighter;/*aplica fuente mais fina para o texto*/
     font-size: 1.5rem;/*define o tamanho da fuente*/
     text-transform: lowercase;/*trasforma o texto adicional para letras minúsculas*/
+}
+
+.content h3 {
+    font-size: 2rem;/*define o tamanho da fuente*/
+}
+
+
+
+
+
+
+/*estelizando ultima parte de caixas*/
+/*formatação das caixas, aqui estamos mexendo elemento pai*/
+.review .box-container {
+    display: grid;/**/
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr ));
+    gap: 1.5rem;
+}
+
+
+/* aqui estamos alterando a caixa (box) */
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;/*centraliza os textos*/
+    padding: 3rem 2rem;/*adiona espaçamento interno nas caixas*/
+
+}
+/* estilizando parágrafo */
+.review .box-container .box p {
+    font-size: 1.7rem;/*define o tamahno da fonte*/
+    line-height: 1.8;/*espaçamento entre as linhas*/
+    color: #ccc;/*cor da letra*/
+    padding: 2rem 0;/*add espaçamento vertical ao parágrafo*/
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;/*add espaçamento vertical zerando as laterais */
+    color: #fff;
+    font-size: 2.2rem;/**/
+}
+
+.user {
+    height: 10rem; /*defiene altura de imagem do usuario*/
+    width: 10rem; /*largura da imagem*/
+    border-radius: 50%;
+    object-fit: cover;/*ajusta a imagem para preencher o espaço disponível/container sem distorção*/
+}
+
+
+.review .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
 }
