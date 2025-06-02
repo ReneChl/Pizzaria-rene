@@ -519,3 +519,39 @@ footer .container {
     color: var(--main-color);
     transition: 0.8s;
 }
+
+.footer-bottom {
+    text-align: center;/*Centraliza o texto*/
+    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;/*define o tamanho da fonte*/
+    border-top: var(--border);/*adiciona uma borda supewrior*/
+    margin-top: 2rem;/*Adiciona espaço acima do rodapé inferior*/
+    color: #ccc;/*Define a cor do texto como cinza claro*/
+}
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%; /*  esta desminuido de aquel html que era de 62.5%. eneste caso va permanecer con 55% es lo que encaja en simulador de movel ou celular */
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /*colocar código para esconder o menu*/
+    .ul-header {
+        
+        
+    }
+
+    
+
+}
