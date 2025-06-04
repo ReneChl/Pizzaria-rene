@@ -548,10 +548,31 @@ footer .container {
 @media (max-width: 768px) {
     /*colocar código para esconder o menu*/
     .ul-header {
-        
-        
-    }
+               
+    }  
 
-    
+}
 
+
+
+/*ESTTILIZANDO WHATSSAPP*/
+.botao-zap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 40%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    z-index: 1000;
+
+}
+
+.botao-zap a i {
+    color: white;
 }

@@ -1,0 +1,56 @@
+/*position RELATIVE*/
+/*o ELEMENTO CONTINUA NO FLUXO NORMAL, MAS PODE SER MOVIDO EM RELAÇÃO A SUA PISIÇÃO ORIGINAL*/
+/*UTILIZA TOP, lef,right e bottom para ajustar sua posição*/
+
+/*posicionamento do elemento*/
+/* div {
+    position: relative;
+    top: 10px;/*desce 10px*/
+    left: 10px;/*vai 20px para a direita*/
+} */
+
+
+/*position ABSOLUTE*/
+/*O elemento sai do fluxo normal e é posicionado em relação ao elemento pai com posicionamneto:relative (ou ablolute, fixed) */
+/*Se nenhum pai estiver posicionado será em relação à <body>*/
+.container {
+    position: relative;
+}
+
+.filho {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*muito usado para sobreponer elementos (como balões de notificação ou botões internos)*/
+/*posicionamento relative e absolute trabalham juntos*/
+
+
+
+
+/*position FIXED*/
+/*O elemento é fixado em relação à janela do navegador (viewport)
+mesmo ao rolar a página, ele fica parado no lugar*/
+
+ /*Estelizando zap*/
+.botao-whats {
+    position: fixed;
+    bottom: 20px; /*coloca abaixo*/
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1000;
+    
+}
+
+.botao-whats a i {
+    color: white;
+}
