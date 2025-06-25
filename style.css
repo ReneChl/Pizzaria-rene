@@ -175,7 +175,7 @@ header {
     /*alinha a esquerda*/
     width: 100%;
     /*ocupa toda a largura*/
-    height: 100%;
+    height: 100%;   
     /*ocupa toda altura*/
     background-color: rgba(0, 0, 0, 0.5);
     /*adiciona sobreposição escura*/
@@ -312,10 +312,10 @@ section {
     padding: 0.5rem 0;/*adiciona espaçamento vertical ao preço*/
 }
 
-.container .box .price samp {
+.container .box .price span {
     font-size: 1.5rem;/*Define o tamanho da fonte para o preço original*/
     text-decoration: line-through;/*aplica uma linha para indicar preço riscado*/
-    font-weight: lighter;/*Aplica um peso de fonte mais fino*/
+    font-weight: lighter;   
 }
 
 /*aplicando hover*/
