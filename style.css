@@ -455,7 +455,7 @@ section {
 .title-footer {
     text-align: center;
     text-transform: uppercase;/*caixa alta*/
-    font-size: 2rem;/*equivale a 20px*/
+    font-size: 2rem;    
     color: #fff;
     margin-bottom: 1.5rem;
 }
@@ -498,7 +498,7 @@ footer .container {
     font-size: 1.6rem;
 }
 
-.content-1 ul li a:hover{
+.content-1 ul li a:hover{    
     color: var(--main-color);
     transition: 0.8s;
 }
